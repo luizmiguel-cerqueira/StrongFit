@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+body,html
+{
+    margin: 0;
+    padding: 0;
+    background: #FF363E;
+}
+.hero{
+    display: flex;
+}
+.hero-left{
+    flex: 1;
+    background: #FF363E;
+    aspect-ratio: 270 / 300;
+}
+.BigLetter{
+    font-size: 100px;
+    font-family:'Anton', sans-serif ;
+}
+.btn-hero-left{
+    font-size: xx-large;
+    font-family:'Anton', sans-serif ;
+}
+.SmallLetter{
+    font-size: 50px;
+    font-family: 'Roboto', sans-serif;
+}
+.hero-right{
+    flex: 1;
+    background: #FF363E;
+    position: relative;
+}
+.hero-img{
+    position: absolute;
+    inset: 0;
+    background-image: url(images/pexels-ivan-s-pequenoPretoeBranco.jpg);
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(
+        0% 0%,
+        100% 0%,
+        100% 100%,
+        20% 100%
+    );
+}
+.reviews{
+    background-color: black;
+    display: flex;
+    height: 936px;
+}
+.review{
+    width: 33%;
+}
+.Aspas{
+    font-size: 100px;
+    color: #000000;
+    font-family: 'Quicksand', sans-serif;
+    -webkit-text-stroke: 1px #FF363E;
+}
+.ReviewText{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 26px;
+}
+.ReviewOwner{
+    font-size: 50px;
+    color: #FF363E;
+    font-family:'Anton', sans-serif ;
+}

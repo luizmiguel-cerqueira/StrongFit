@@ -1,15 +1,12 @@
 
 body {
-        margin: 0;
-        padding: 0;
-        background-image: url('images/pexels-leonmart-1552252-grande.jpg'); /* <<< coloque sua imagem aqui */
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    background-image: url('../images/pexels-leonmart-1552252-grande.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
-/* .imgem{
-    background-image: url(images/pexels-leonmart-1552252-grande.jpg);
-} */
 .card {
     border: none;
     border-radius: 20px;

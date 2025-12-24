@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Tem ordem de preferencia, é o ultimo carregado -->
+    <!-- Bootstrap(menos preferencia) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- CSS (mais preferencia) -->
+    <link rel="stylesheet" href="prefer.css">
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StrongFit | Hub</title>
+</head>
+<body>
+    <div class="Container">
+        <aside class="SideBar">
+            <ul class="MuscleBox mx-3">
+                
+                <li class="mx-3">membros superiores</li>
+                
+                <li class="musculo mt-3" data-musculo="peito">Peito</li>   
+                <li class="musculo" data-musculo="ombro">Ombro<li>   
+                <li class="musculo" data-musculo="triceps">Tríceps</li>   
+                <li class="musculo" data-musculo="biceps">Bíceps<li>   
+                <li class="musculo" data-musculo="costas">Costas<li>
+                
+                <li  class="mx-3">membros inferiores</li>
+                
+                <li class="musculo mt-3" data-musculo="pernas">Pernas</li>
+                <li class="musculo" data-musculo="gluteos">Gluteos</li>
+                <li class="musculo" data-musculo="panturrilha">Panturrilha</li>
+            </ul>
+        </aside>
+        
+        <div class="CentralContainer">
+            <div class="HeaderContainer">
+                <span onclick="window.location.href='../userArea/userArea.html'" class="logoBtn mt-3 ms-3">Strong Fit</span>
+                <span class="logoutBtn mt-3 ms-3">deslogar</span>
+            </div>
+            <div class="ContentConteiner">
+            <div class="PreferForm">
+                <form action="" class="PreferForm">
+                    
+                    <h1 class="question">Qual seu objetivo?</h1>
+                    <div class="QuestionsForm">
+                        <label for="Massa">
+                            <input type="radio" name="objetivo" id="Massa" value="Massa">
+                            ganho de Massa
+                        </label>
+                        <label for="Emagrecimento">
+                            <input type="radio" name="objetivo" id="Emagrecimento" value="Emagrecimento">
+                            Emagrecimento
+                        </label>
+                        <label for="Definicao">
+                            <input type="radio" name="objetivo" id="Definicao" value="Definicao">
+                            Definição
+                        </label>
+                        <label for="Forca">
+                            <input type="radio" name="objetivo" id="Forca" value="Forca">
+                            Força
+                        </label>
+                        <label for="Condicionamento" class="mb-3">
+                            <input type="radio" name="objetivo" id="Condicionamento" value="Condicionamento">
+                            Condicionamento
+                        </label>
+                        
+                    </div>
+                    <h1 class="question">A quanto tempo treina?</h1>
+                    <div class="QuestionsForm">
+                        
+                        <label for="-1">
+                            <input  type="radio" name="Exp" id="-1" value="-1">
+                            Menos de 1 ano
+                        </label>
+                        <label for="2-4">
+                            <input type="radio" name="Exp" id="2-4" value="2-4">
+                            1 a 3 anos
+                        </label>
+                        <label for="4+" class="mb-3">
+                            <input type="radio" name="Exp" id="4+" value="4+">
+                            4+ anos
+                        </label>
+                    </div>
+
+                    <h1 class="question">Tempo por treino</h1>
+                    
+                    <div class="QuestionsForm">
+                        <label for="-30">
+                            <input type="radio" name="Duracao" id="-30" value="-30m">
+                            Até 30 minutos
+                        </label>
+                        <label for="2-4">
+                            <input type="radio" name="Duracao" id="-60" value="+/-60m">
+                            Até 60 minutos
+                        </label>
+                        <label for="4+" class="mb-3">
+                            <input type="radio" name="Duracao" id="1+" value="1h+">
+                            60 minutos ou mais
+                            </label>
+                        </div>
+                        <h1 class="question">Onde treina?</h1>
+                        
+                        <div class="QuestionsForm">
+                            <label for="Casa">
+                                <input type="radio" name="Local" id="Casa" value="Casa">
+                                Casa
+                            </label>
+                            <label for="Academia" class="mb-3">
+                                <input type="radio" name="Local" id="Academia" value="Academia">
+                                Academia
+                            </label>
+                        </div>
+                        
+                    <h1  class="question">Possui alguma lesão ou limitação?</h1>
+                    
+                    <div class="QuestionsForm">
+                        <label for="nao">
+                            <input type="radio" name="Def" id="nao" value="nao" checked>
+                            Não
+                        </label>
+                        <label for="Academia" class="mb-3">
+                            <input type="radio" name="Def" id="sim" value="sim">
+                                Sim
+                        </label>
+                        <input type="text" name="" id="Descricao" placeholder="Descreva" disabled>
+                    </div>
+                    <div class="QuestionsForm" >
+                        <button class="btn btn-dark" type="button" id="SubmitBtn">Enviar preferencias</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>  
+    <script src="../js/prefer.js" defer></script>    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>

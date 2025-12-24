@@ -1,0 +1,27 @@
+
+body {
+        margin: 0;
+        padding: 0;
+        background-image: url('../images/pexels-leonmart-1552252-grande.jpg');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+}
+.card {
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+.form-control {
+    background: #f7f9fc;
+    border: 1px solid #e2e6ea;
+    height: 50px;
+}
+#aviso1 , #aviso2{
+    color: red;
+}
+.btn-custom {
+    height: 50px;
+    font-size: 18px;
+    border-radius: 10px;
+}
